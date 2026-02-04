@@ -22,13 +22,13 @@ async function createFood(req, res) {
 
 }
 
-// async function getFoodItems(req, res) {
-//     const foodItems = await foodModel.find({})
-//     res.status(200).json({
-//         message: "Food items fetched successfully",
-//         foodItems
-//     })
-// }
+async function getFoodItems(req, res) {
+    const foodItems = await foodModel.find({})
+    res.status(200).json({
+        message: "Food items fetched successfully",
+        foodItems
+    })
+}
 
 
 // async function likeFood(req, res) {
@@ -132,7 +132,7 @@ async function createFood(req, res) {
 
 module.exports = {
     createFood,
-    // getFoodItems,
+    getFoodItems,
     // likeFood,
     // saveFood,
     // getSaveFood
