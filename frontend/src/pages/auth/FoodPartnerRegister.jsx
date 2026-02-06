@@ -28,7 +28,7 @@ const FoodPartnerRegister = () => {
     }, { withCredentials: true })
       .then(response => {
         console.log(response.data);
-        navigate("/"); // Redirect to create food page after successful registration
+        navigate("/create-food"); // Redirect to create food page after successful registration
       })
       .catch(error => {
         console.error("There was an error registering!", error);
