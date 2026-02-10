@@ -39,10 +39,10 @@ const Profile = () => {
                         <span className="profile-stat-label">total meals</span>
                         <span className="profile-stat-value">{profile?.totalMeals}</span>
                     </div>
-                    <div className="profile-stat" role="listitem">
+                    {/* <div className="profile-stat" role="listitem">
                         <span className="profile-stat-label">customer served</span>
                         <span className="profile-stat-value">{profile?.customersServed}</span>
-                    </div>
+                    </div> */}
                 </div>
             </section>
 

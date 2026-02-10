@@ -16,7 +16,8 @@ async function getFoodPartnerById(req, res) {
         message: "Food partner retrieved successfully",
         foodPartner: {
             ...foodPartner.toObject(),
-            foodItems: foodItemsByFoodPartner
+            foodItems: foodItemsByFoodPartner,
+            totalMeals: foodItemsByFoodPartner.length
         }
 
     });
